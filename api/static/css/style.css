@@ -1,0 +1,44 @@
+/* Custom styles for the timetable generator */
+
+.course-card {
+    border-left: 4px solid #007bff;
+}
+
+.session-card {
+    border-left: 3px solid #28a745;
+    background-color: #f8f9fa;
+}
+
+textarea#jsonInput {
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+    border-top: 2px solid #007bff;
+}
+
+.form-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+#loadJsonFile {
+    margin-top: 10px;
+}
+
+.card-header h4, .card-header h5 {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card-body {
+        padding: 15px 10px;
+    }
+}
