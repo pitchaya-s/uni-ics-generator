@@ -131,6 +131,12 @@ function collectFormData() {
                 session.notification = parseInt(notification);
             }
             
+            // Add description only if provided
+            const description = sessionCard.querySelector('.session-description').value.trim();
+            if (description) {
+                session.description = description;
+            }
+            
             course.sessions.push(session);
         });
         
@@ -262,6 +268,7 @@ function loadJsonToForm() {
                         currentSession.querySelector('.session-location').value = sessionData.location || '';
                         currentSession.querySelector('.session-weeks').value = sessionData.weeks || '';
                         currentSession.querySelector('.session-notification').value = sessionData.notification || '';
+                        currentSession.querySelector('.session-description').value = sessionData.description || '';
                     });
                 }
             });
